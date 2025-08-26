@@ -82,39 +82,53 @@
 </head>
 <body>
 
-    <div class="slide-wrapper">
-        <div class="slide-container">
-            <div class="logo-container" style="position: absolute; top: 40px; left: 40px; z-index: 20; height: 40px;">
-                <img alt="Ringostat" class="logo-image" src="https://assets.ringostat.com/assets/new-home-page/img/logo-for-light.svg" style="height: 100%; width: auto;">
-            </div>
-            <div class="bg-pattern" style="position: absolute; width: 100%; height: 100%; opacity: 0.04; z-index: 0;">
-                <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
-                    <pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12B779" stroke-width="1"></path>
-                    </pattern>
-                    <rect fill="url(#grid)" height="100%" width="100%"></rect>
-                </svg>
-            </div>
-            <div class="accent-line" style="position: absolute; width: 8px; height: 80px; background-color: #12B779; left: 80px; top: 220px;"></div>
-            <div class="slide-content" style="position: relative; z-index: 10; padding-top: 8rem;">
-                <h4 class="text-lg font-semibold text-green-600 mb-4">Детальний маркетинговий аналіз</h4>
-                <h1 class="text-6xl font-bold text-gray-800 mb-8">Ringostat AI Supervisor</h1>
-                <h2 class="text-2xl text-gray-600 max-w-3xl">Рекомендації для підвищення конверсії та оптимізації лідогенерації з фокусом на сильні/слабкі сторони</h2>
-                <div class="mt-16">
-                    <div class="flex items-center">
-                        <div class="w-16 h-1 bg-green-500"></div>
-                        <span class="ml-4 text-gray-500">Серпень 2025</span>
-                    </div>
+    Гаразд, виконав усі ваші нові правки.
+
+**Що було змінено:**
+
+1.  Текст заголовка (`Ringostat AI Supervisor`) був зміщений ще правіше, щоб збільшити відстань від зеленої лінії.
+2.  Код логотипа був замінений на наданий вами варіант: `<img src="Ringostat.svg" alt="logo">`. Я додав стиль для збереження пропорцій.
+3.  Нижній текст ("Професійний маркетинговий аналіз...") був піднятий вище, щоб не накладався на нумерацію сторінки.
+
+Будь ласка, замініть блок першого слайду у вашому основному файлі на цей код.
+
+-----
+
+```html
+<div class="slide-wrapper">
+    <div class="slide-container">
+        <div class="logo-container" style="position: absolute; top: 40px; left: 64px; z-index: 20; height: 40px;">
+            <img src="Ringostat.svg" alt="logo" style="height: 100%; width: auto;">
+        </div>
+        <div class="bg-pattern" style="position: absolute; width: 100%; height: 100%; opacity: 0.04; z-index: 0;">
+            <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <pattern height="40" id="grid" patternUnits="userSpaceOnUse" width="40">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12B779" stroke-width="1"></path>
+                </pattern>
+                <rect fill="url(#grid)" height="100%" width="100%"></rect>
+            </svg>
+        </div>
+        <div class="accent-line" style="position: absolute; width: 8px; height: 80px; background-color: #12B779; left: 80px; top: 220px;"></div>
+        <div class="slide-content" style="position: relative; z-index: 10; padding-left: 8rem; padding-top: 8rem;">
+            <h4 class="text-lg font-semibold text-green-600 mb-4">Детальний маркетинговий аналіз</h4>
+            <h1 class="text-6xl font-bold text-gray-800 mb-8">Ringostat AI Supervisor</h1>
+            <h2 class="text-2xl text-gray-600 max-w-3xl">Рекомендації для підвищення конверсії та оптимізації лідогенерації з фокусом на сильні/слабкі сторони</h2>
+            <div class="mt-16">
+                <div class="flex items-center">
+                    <div class="w-16 h-1 bg-green-500"></div>
+                    <span class="ml-4 text-gray-500">Серпень 2025</span>
                 </div>
             </div>
-            <div class="tech-icon" style="position: absolute; opacity: 0.65; top: 100px; right: 180px; font-size: 36px; color: #12B779;"><i class="fas fa-brain"></i></div>
-            <div class="tech-icon" style="position: absolute; opacity: 0.65; top: 200px; right: 100px; font-size: 24px; color: #12B779;"><i class="fas fa-chart-line"></i></div>
-            <div class="tech-icon" style="position: absolute; opacity: 0.65; bottom: 180px; right: 220px; font-size: 48px; color: #12B779;"><i class="fas fa-robot"></i></div>
-            <div class="brand-mark" style="position: absolute; bottom: 40px; right: 40px; font-size: 14px; color: #64748b;">Професійний маркетинговий аналіз | Підвищення конверсії | 2025</div>
-            <div class="bottom-decoration" style="height: 10px;"></div>
-            <div class="page-number">1 / 17</div>
         </div>
+        <div class="tech-icon" style="position: absolute; opacity: 0.65; top: 100px; right: 180px; font-size: 36px; color: #12B779;"><i class="fas fa-brain"></i></div>
+        <div class="tech-icon" style="position: absolute; opacity: 0.65; top: 200px; right: 100px; font-size: 24px; color: #12B779;"><i class="fas fa-chart-line"></i></div>
+        <div class="tech-icon" style="position: absolute; opacity: 0.65; bottom: 180px; right: 220px; font-size: 48px; color: #12B779;"><i class="fas fa-robot"></i></div>
+        <div class="brand-mark" style="position: absolute; bottom: 60px; right: 40px; font-size: 14px; color: #64748b;">Професійний маркетинговий аналіз | Підвищення конверсії | 2025</div>
+        <div class="bottom-decoration" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 10px; background-color: #12B779;"></div>
+        <div class="page-number">1 / 17</div>
     </div>
+</div>
+```
 
     <div class="slide-wrapper">
         <div class="slide-container">
@@ -694,4 +708,5 @@
     </div>
 
 </body>
+
 </html>
